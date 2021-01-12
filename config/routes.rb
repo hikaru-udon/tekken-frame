@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root "tops#index"
+  root "characters#index"
+  resources :moves, only: [:index, :show]
 end
