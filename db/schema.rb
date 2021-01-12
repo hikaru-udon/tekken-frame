@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_11_095106) do
+ActiveRecord::Schema.define(version: 2021_01_12_093208) do
 
   create_table "characters", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name", null: false
   end
 
+  create_table "jin_moves", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "move_name"
+    t.text "command"
+    t.string "hitbox"
+    t.string "damage"
+    t.text "effect"
+    t.string "startup"
+    t.string "block"
+    t.string "hit"
+    t.string "counter"
+    t.bigint "character_id", null: false
+    t.index ["character_id"], name: "index_jin_moves_on_character_id"
+  end
+
+  add_foreign_key "jin_moves", "characters"
 end
