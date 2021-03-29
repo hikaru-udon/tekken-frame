@@ -1,0 +1,70 @@
+<<<<<<< Updated upstream
+* {
+ background: rgba(255,255,255,0.3);  
+}
+
+.moves-main{
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  background-color: lightgray;
+  // background:rgba(255,255,255,0.3) 背景画像を挿入する場合
+=======
+.moves{
+  width: 100vw;
+  background-color: darkgray;
+  padding: 10px 5px;
+}
+
+.profile{
+  text-align: center;
+}
+
+.all_moves{
+  width: auto;
+  padding: 0 20px;
+  align-items: center;
+>>>>>>> Stashed changes
+}
+
+table{
+  width: 100%;
+<<<<<<< Updated upstream
+  color:black;
+  background-color: white;
+}
+
+table tr{
+}
+
+table th{
+  padding: 10px;
+  border: 1px solid gray;
+  color: white;
+  background-color: #003366;
+  // background:rgba(255,255,255,0.3) 背景画像を挿入する場合
+}
+
+table td{
+  padding: 10px;
+  border: 1px solid gray;
+  .name-link{
+    text-decoration: none;
+    color: black;
+  }
+=======
+}
+
+table tr{
+  border: 2px solid black;
+}
+
+table th{
+  background-color: gray;
+  border: 1px solid black;
+}
+
+table td{
+  border: 1px solid black;
+>>>>>>> Stashed changes
+}

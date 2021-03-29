@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# characters
 
-Things you may want to cover:
+| Column  | Type       | Option                         |
+| ------- | ---------- | ------------------------------ |
+| name    | string     | null: false                    |
 
-* Ruby version
+has_many :moves
 
-* System dependencies
 
-* Configuration
+# moves (xキャラクター数)
 
-* Database creation
+| Column     | Type       | Option                         |
+| ---------- | ---------- | ------------------------------ |
+| move_name  | string     |                                |
+| command    | text       |                                |
+| hitbox     | string     |                                |
+| damage     | integer    |                                |
+| effect     | text       |                                |
+| startup    | string     |                                |
+| block      | string     |                                |
+| hit        | string     |                                |
+| counter    | string     |                                |
+| character  | references | null: false, foreign_key: true |
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+belongs_to :character
