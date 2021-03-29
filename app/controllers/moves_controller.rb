@@ -1,5 +1,14 @@
 class MovesController < ApplicationController
-  def index
+# before_action :set_move, only: [:index, :show]
 
-  end
+def index
+  # binding.pry
+  @character = Character.find(params[:character_id])
+  @moves = @character.moves
+end
+
+  private
+
+  # def set_move
+  # end
 end

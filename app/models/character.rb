@@ -1,3 +1,3 @@
 class Character < ApplicationRecord
-  has_many :jin_moves
+  has_many :moves
 end

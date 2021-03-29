@@ -1,42 +1,17 @@
 <div class='characters'>
   <ul>
-    <li><%= link_to image_tag("btn_jin_on.png"), moves_path %></li>
-    <li><%= link_to image_tag("btn_king_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_armorking_on.png"), root_path %></li>
+  <% @characters.each do |character| %>
+    <li class='character-list'><%= link_to character.name, character_moves_path(character) %></li>
+  <% end %>
   </ul>
 </div>
-<div class='characters'>
-  <ul>
-    <li><%= link_to image_tag("btn_chloe_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_king_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_armorking_on.png"), root_path %></li>
-  </ul>
-</div>
-<div class='characters'>
-  <ul>
-    <li><%= link_to image_tag("btn_jin_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_king_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_armorking_on.png"), root_path %></li>
-  </ul>
-</div>
-<div class='characters'>
-  <ul>
-    <li><%= link_to image_tag("btn_jin_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_king_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_armorking_on.png"), root_path %></li>
-  </ul>
-</div>
-<div class='characters'>
-  <ul>
-    <li><%= link_to image_tag("btn_jin_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_king_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_armorking_on.png"), root_path %></li>
-  </ul>
-</div>
-<div class='characters'>
-  <ul>
-    <li><%= link_to image_tag("btn_jin_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_king_on.png"), root_path %></li>
-    <li><%= link_to image_tag("btn_armorking_on.png"), root_path %></li>
-  </ul>
-</div>
+
+<%# 
+  <div class='characters'>
+    <ul>
+      <li><%= link_to image_tag("btn_chloe_on.png"), root_path ></li>
+      <li><%= link_to image_tag("btn_chloe_on.png"), root_path ></li>
+      <li><%= link_to image_tag("btn_chloe_on.png"), root_path ></li>
+    </ul>
+  </div>
+%>

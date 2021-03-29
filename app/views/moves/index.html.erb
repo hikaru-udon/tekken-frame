@@ -1,0 +1,20 @@
+<div class="moves-main">
+  <table>
+    <tr>
+      <th>技名</th>
+      <th>コマンド</th>
+      <th>ダメージ</th>
+      <th>発生F</th>
+      <th>ガードF</th>
+    </tr>
+    <% @moves.each do |moves| %>
+      <tr>
+        <td><%=link_to moves.moves_name, "#", class: "name-link" %></td>
+        <td><%= moves.command %></td>
+        <td><%= moves.damage %></td>
+        <td><%= moves.startup %></td>
+        <td><%= moves.block %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

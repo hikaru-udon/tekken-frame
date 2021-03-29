@@ -1,28 +1,32 @@
-<%= render "shared/header" %>
-
 <div class = "main">
+  <%= render "shared/header" %>
+
   <div class="title-contents">
     <%= image_tag("logo_tekken7.png") %>
-    <%# <h1>鉄拳7 フレームデータ</h1> %>
   </div>
+
   <div class="main-contents">
+
     <div class = "select-character">
-      <div class = "title">
+      <div class = "contents-name">
         キャラクター選択
       </div>
       <%= render "characters"%>
     </div>
+
     <div class="basic-operation">
-      <div class="title">
+      <div class="contents-name">
         基本操作知識
       </div>
     </div>
+
     <div class="comments">
-      <div class="title">
+      <div class="contents-name">
         コメント
       </div>
     </div>
-  </div>
-</div>
 
-<%= render "shared/footer"%>
+  </div>
+
+  <%= render "shared/footer"%>
+</div>
