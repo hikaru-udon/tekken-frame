@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 * {
  background: rgba(255,255,255,0.3);  
 }
@@ -8,10 +9,27 @@
   padding: 50px;
   background-color: lightgray;
   // background:rgba(255,255,255,0.3) 背景画像を挿入する場合
+=======
+.moves{
+  width: 100vw;
+  background-color: darkgray;
+  padding: 10px 5px;
+}
+
+.profile{
+  text-align: center;
+}
+
+.all_moves{
+  width: auto;
+  padding: 0 20px;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 table{
   width: 100%;
+<<<<<<< Updated upstream
   color:black;
   background-color: white;
 }
@@ -34,4 +52,19 @@ table td{
     text-decoration: none;
     color: black;
   }
+=======
+}
+
+table tr{
+  border: 2px solid black;
+}
+
+table th{
+  background-color: gray;
+  border: 1px solid black;
+}
+
+table td{
+  border: 1px solid black;
+>>>>>>> Stashed changes
 }

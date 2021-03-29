@@ -1,8 +1,14 @@
 <div class='characters'>
   <ul>
+<<<<<<< Updated upstream
   <% @characters.each do |character| %>
     <li class='character-list'><%= link_to character.name, character_moves_path(character) %></li>
   <% end %>
+=======
+    <li><%= link_to image_tag("btn_jin_on.png"), character_moves_path(:character_id) %></li>
+    <li><%= link_to image_tag("btn_king_on.png"), root_path %></li>
+    <li><%= link_to image_tag("btn_armorking_on.png"), root_path %></li>
+>>>>>>> Stashed changes
   </ul>
 </div>
 
