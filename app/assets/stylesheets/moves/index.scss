@@ -16,14 +16,20 @@
   padding: 10px 5px;
 }
 
-.profile{
+.character-name{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  background-color: aliceblue;
 }
 
-.all_moves{
-  width: auto;
-  padding: 0 20px;
-  align-items: center;
+.character-name h1{
+  font-size: 60px;
+  font-family: serif;
+  margin: 10px;
+  background-color: aliceblue;
 }
 
 .category{
