@@ -5,31 +5,21 @@
 .moves-main{
   height: 100%;
   width: 100%;
-  padding: 50px;
+  padding: 10vmin 30px 30px 30px;
   background-color: lightgray;
   // background:rgba(255,255,255,0.3) 背景画像を挿入する場合
 }
 
-.moves{
-  width: 100vw;
-  background-color: darkgray;
-  padding: 10px 5px;
-}
-
 .character-name{
   width: 100vw;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  height: 15vh;
   background-color: aliceblue;
 }
 
 .character-name h1{
   font-size: 60px;
   font-family: serif;
-  margin: 10px;
-  background-color: aliceblue;
+  background-color: whitesmoke;
 }
 
 .category{
