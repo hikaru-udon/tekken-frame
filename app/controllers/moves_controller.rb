@@ -1,10 +1,31 @@
 class MovesController < ApplicationController
-# before_action :set_move, only: [:index, :show]
+before_action :set_move, only: [:index, :search]
 
   def index
-    # binding.pry
-    @character = Character.find(params[:character_id])
     @moves = @character.moves
   end
 
+  def search
+    #Viewのformで取得したパラメータをモデルに渡す
+    @moves = Move.search(params[:keyword])
+    render :index
+  end
+
+  private
+  
+  def set_move
+    @character = Character.find(params[:character_id])
+  end
+
+  # def character_params
+  #   params.require(@character).permit(@character.name)    
+  # end
+
+  # def move_params
+  #   params.require(:move).permit(:moves_name)
+  # end
+
+
+  
+  
 end
