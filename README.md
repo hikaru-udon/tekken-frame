@@ -1,16 +1,15 @@
 # README
 
 # characters
-
 | Column  | Type       | Option                         |
 | ------- | ---------- | ------------------------------ |
 | name    | string     | null: false                    |
 
+## association
 has_many :moves
 
 
-# moves (xキャラクター数)
-
+# moves
 | Column     | Type       | Option                         |
 | ---------- | ---------- | ------------------------------ |
 | move_name  | string     |                                |
@@ -24,4 +23,5 @@ has_many :moves
 | counter    | string     |                                |
 | character  | references | null: false, foreign_key: true |
 
+## association
 belongs_to :character
