@@ -2,10 +2,16 @@
 
   <%= render "shared/header" %>
 
-  <%= form_with(url: search_character_moves_path, local: true, method: :get, class: "search-form") do |form| %>
-    <%= form.text_field :keyword, placeholder: "技を検索する", class: "search-input" %>
-    <%= form.submit "検索", class: "search-btn" %>
-  <% end %>
+  <div class="moves-search-form">
+    <%= form_with(url: search_character_moves_path, local: true, method: :get, class: "search-form") do |form| %>
+      <%= form.text_field :keyword, placeholder: "技を検索する", class: "search-input" %>
+      <%= form.submit "検索", class: "search-btn" %>
+    <% end %>
+  </div>
+
+  <div class="back-button">
+    <%=link_to "技一覧に戻る", character_moves_path %>
+  </div>
 
   <div class="character-name">
     <h1><%= @character.name %></h1>
