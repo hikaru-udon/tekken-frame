@@ -3,6 +3,8 @@
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
 
+<%=link_to "技一覧に戻る", character_moves_path %>
+
 <ul>
   <% @moves.each do |move| %>
     <li> "moves_name"</li>
