@@ -1,4 +1,4 @@
-// 大枠 //
+// 大枠
 .container{
   width: 1000px;
   min-height: 100vh;
@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-// 検索ボタン //
+// 検索ボタン
 .search-form{
   padding: 5vh 0;
   transform: scale(1.5, 1.5);
@@ -36,10 +36,9 @@
   background-color: #003366;
   color: white;
   cursor: pointer;
-  // transform: scale(1.2, 1.2);
 }
 
-//「技一覧表示に戻る」ボタン //
+// 技一覧表示に戻る」ボタン
 .back-btn{
   height: 10vh;
   display: flex;
@@ -47,7 +46,7 @@
 }
 .back:hover{
   color: #2c91f7;
-  transition: all  0.2s;
+  transition: all 0.2s;
 }
 .back{
   font-size: 1.2rem;
@@ -57,35 +56,12 @@
 
 //キャラクターネーム//
 .character-name{
-  height: 20vmin;
-  font-size: 15vmin;
-  font-family: serif;
-  display: flex;
-  align-items: flex-end;
-  
-.moves-main{
-  height: 100%;
-  width: 100%;
-  padding: 10vmin 30px 30px 30px;
-  background-color: lightgray;
-  // background:rgba(255,255,255,0.3) 背景画像を挿入する場合
-}
-
-.character-name{
-  width: 100vw;
-  height: 15vh;
-  background-color: aliceblue;
-  font-family: serif;
+  height: 12vh;
+  font-size: 12vmin;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-}
-
-.character-name p{
-  font-size: 11vh;
-  display: block;
 }
 
 //技表//
@@ -140,7 +116,6 @@
 }
 
 
-
 // スマホ画面へのレスポンシブ
 @media screen and (max-width: 1000px){
   .container{
@@ -157,7 +132,7 @@
   }
 }
 
-  
+
 // width800px以下で表が醜くなるのでレスポンシブ対応
 @media screen and (max-width: 500px){
   .moves-data{
@@ -166,5 +141,4 @@
   .moves-data td{
     padding: 0.5vmin;
   }
-
 }
