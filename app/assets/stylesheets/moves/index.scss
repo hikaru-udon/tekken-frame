@@ -56,34 +56,12 @@
 
 //キャラクターネーム//
 .character-name{
-  height: 20vmin;
-  font-size: 15vmin;
-  font-family: serif;
-  display: flex;
-  align-items: flex-end;
-}
-.moves-main{
-  height: 100%;
-  width: 100%;
-  padding: 10vmin 30px 30px 30px;
-  background-color: lightgray;
-}
-
-.character-name{
-  width: 100vw;
-  height: 15vh;
-  background-color: aliceblue;
-  font-family: serif;
+  height: 12vh;
+  font-size: 12vmin;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-}
-
-.character-name p{
-  font-size: 11vh;
-  display: block;
 }
 
 //技表//
