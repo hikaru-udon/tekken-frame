@@ -1,7 +1,5 @@
 class Move < ApplicationRecord
   belongs_to :character
-<<<<<<< Updated upstream
-=======
 
   def self.search(search) #self.はMove.を意味する
     if search !=""
@@ -10,6 +8,5 @@ class Move < ApplicationRecord
       Move.all #全て表示させる
     end
   end
-
->>>>>>> Stashed changes
+  
 end
