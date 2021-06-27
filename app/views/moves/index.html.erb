@@ -1,23 +1,53 @@
+<<<<<<< Updated upstream
 <div class="moves-main">
   <div class="character-name">
     <h1><%= @character.name %></h1>
   </div>
   <table class="category">
+=======
+<%= render "shared/header" %>
+<div class="container">
+
+  <div class="search-form">
+    <%= form_with(url: search_character_moves_path, local: true, method: :get, class:"form") do |form| %>
+      <%= form.text_field :keyword, placeholder: "キーワードで検索する", class: "search-input" %>
+      <button type=submit class="search-btn">
+        <i class="fas fa-search"><% form.submit "検索"%></i>
+      </button>
+    <% end %>
+  </div>
+
+  <div class="back-btn">
+    <%=link_to "技Top画面", character_moves_path, class:"back" %>
+  </div>
+
+  <div class="character-name">
+    <%= @character.name %>
+  </div>
+
+  <table class="moves-data">
+>>>>>>> Stashed changes
     <tr>
-      <th>技名</th>
-      <th>コマンド</th>
-      <th>ダメージ</th>
-      <th>発生F</th>
-      <th>ガードF</th>
+      <th class="moves_name">技名</th>
+      <th class="command">コマンド</th>
+      <th class="damage">ダメージ</th>
+      <th class="startup">発生F</th>
+      <th class="block">ガードF</th>
     </tr>
     <% @moves.each do |moves| %>
-      <tr>
-        <td><%=link_to moves.moves_name, "#", class: "name-link" %></td>
-        <td><%= moves.command %></td>
-        <td><%= moves.damage %></td>
-        <td><%= moves.startup %></td>
-        <td><%= moves.block %></td>
+      <tr class="moves-info">
+        <td class="moves_name"><%=link_to moves.moves_name, "#", class: "name-link" %></td>
+        <td class="command"><%= moves.command %></td>
+        <td class="damage"><%= moves.damage %></td>
+        <td class="startup"><%= moves.startup %></td>
+        <td class="block"><%= moves.block %></td>
       </tr>
     <% end %>
   </table>
+<<<<<<< Updated upstream
 </div>
+=======
+
+</div>
+<%= render "shared/footer" %>
+>>>>>>> Stashed changes

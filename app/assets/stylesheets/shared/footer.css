@@ -2,10 +2,19 @@
   width: 100%;
   height: 10vmin;
   background-color: #003366;
+<<<<<<< Updated upstream
   bottom: 0;
   position: absolute;
+=======
+  /* position: absolute;
+  right: 0;
+  bottom: 0; */
+>>>>>>> Stashed changes
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+div{
+  margin: 0 auto;
 }

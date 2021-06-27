@@ -3,10 +3,21 @@
   height: 10vmin;
   background-color: #003366;
   color: white;
-  position: fixed;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   display: flex;
   justify-content: space-around;
   align-items: center;
+<<<<<<< Updated upstream
+=======
+}
+.home_btn{
+  height: 50%;
+  font-family: serif;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 5vmin;
+>>>>>>> Stashed changes
 }
