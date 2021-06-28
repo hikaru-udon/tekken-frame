@@ -36,7 +36,7 @@
   height: 4vmin;
   width: 6vmin;
   border-radius: 0 4vmin 4vmin 0;
-  background-color: #003366;
+  background-color: #103f6d;
   color: white;
   cursor: pointer;
 }
@@ -84,7 +84,7 @@
   border: 1px solid gray;
   vertical-align: middle; //セル内の文字位置を調節 *インライン要素とセルにのみ適用可能
   color: white;
-  background-color: #003366;
+  background-color: #103f6d;
 }
 .moves-data td{
   height: 5vmin;
@@ -127,12 +127,12 @@
   right: 1vmin;
   padding: 3vmin;
   background: #b1abab;
-  border: 2px solid #004285;
+  border: 2px solid #103f6d;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   font-size: 0.8rem;
-  color: #003366;
+  color: #103f6d;
   text-decoration: none;
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
