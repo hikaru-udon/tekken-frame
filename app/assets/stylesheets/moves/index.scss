@@ -2,7 +2,7 @@
 .container{
   width: 1000px;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 8vmin auto 10vmin auto ;
   font-family: serif;
   background-color: white;
   display: flex;
@@ -11,7 +11,7 @@
 
 // 検索ボタン
 .search-form{
-  padding: 5vh 0;
+  margin-bottom: 4vmin;
   transform: scale(1.5, 1.5);
 }
 .form{
@@ -20,7 +20,8 @@
   align-items: center;
 }
 .search-input{
-  padding: 3px 5px;
+  padding: 1px 8px;
+  font-family: serif;
   width: 50vmin;
   border-right: none;
   border-radius: 2rem 0 0 2rem;
@@ -29,7 +30,7 @@
   outline: none;
 }
 .search-btn{
-  padding: 3px;
+  padding: 4px;
   width: 6vmin;
   box-sizing: border-box;
   border-radius: 0 2rem 2rem 0;
@@ -38,9 +39,10 @@
   cursor: pointer;
 }
 
-// 技一覧表示に戻る」ボタン
+//「技一覧表示に戻る」ボタン
 .back-btn{
-  height: 10vh;
+  height: 10vmin;
+  margin-bottom: 2vmin;
   display: flex;
   align-items: center;
 }
@@ -49,25 +51,26 @@
   transition: all 0.2s;
 }
 .back{
-  font-size: 1.2rem;
+  font-size: 3vmin;
   text-decoration: none;
   color: black;
 }
 
-//キャラクターネーム//
+//キャラクターネーム
 .character-name{
-  height: 12vh;
-  font-size: 12vmin;
+  height: 12vmin;
+  margin-bottom: 1vmin;
+  font-size: 10vmin;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-//技表//
+//技表
 .moves-data{
   width: 97%;
-  margin: 2vmin auto;
+  margin: 0 auto;
   table-layout: auto; //セルの幅を調整するプロパティ、widthの指定が必要、auto=内容に合わせ自動調整、fixed＝等間隔やカスタマイズできる
   font-size: 1rem;
   border-collapse: collapse; //要素同士が重なる場合のborderを調整。重ねる＝collapse/離す＝separate
@@ -113,6 +116,37 @@
   min-width: 7vmin;
   padding: 0;
   text-align: center;
+}
+
+// ページトップに戻るボタン jQuery
+.page-top {
+  position: fixed;
+  bottom: 11vmin;
+  right: 1vmin;
+  padding: 3vmin;
+  background: #b1abab;
+  border: 2px solid #004285;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 0.8rem;
+  color: #003366;
+  text-decoration: none;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+//width 1132px以下
+@media screen and (max-width: 1130px){
+  .container{
+    position: relative;
+  }
+  .page_top{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 
