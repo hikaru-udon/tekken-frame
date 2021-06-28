@@ -2,7 +2,7 @@
 .container{
   width: 1000px;
   height: auto;
-  margin: 8vmin auto 10vmin auto ;
+  margin: 0 auto 10vmin auto ;
   font-family: serif;
   background-color: white;
   display: flex;
@@ -11,29 +11,31 @@
 
 // 検索ボタン
 .search-form{
-  margin-bottom: 4vmin;
-  transform: scale(1.5, 1.5);
+  margin: 5vmin;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .form{
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .search-input{
-  padding: 1px 8px;
+  height: 4vmin;
+  padding: 0 1vmin;
   font-family: serif;
+  font-size: 2vmin;
   width: 50vmin;
   border-right: none;
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 4vmin 0 0 4vmin;
 }
 .search-input:focus{
   outline: none;
 }
 .search-btn{
-  padding: 4px;
+  height: 4vmin;
   width: 6vmin;
-  box-sizing: border-box;
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 0 4vmin 4vmin 0;
   background-color: #003366;
   color: white;
   cursor: pointer;
@@ -41,9 +43,9 @@
 
 //「技一覧表示に戻る」ボタン
 .back-btn{
-  height: 10vmin;
-  margin-bottom: 2vmin;
+  margin-bottom: 5vmin;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .back:hover{
