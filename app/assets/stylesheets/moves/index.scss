@@ -1,7 +1,7 @@
 // 大枠
 .container{
   width: 1000px;
-  min-height: 100vh;
+  height: auto;
   margin: 8vmin auto 10vmin auto ;
   font-family: serif;
   background-color: white;
@@ -152,9 +152,12 @@
 
 // スマホ画面へのレスポンシブ
 @media screen and (max-width: 1000px){
+  // 大枠
   .container{
     width: 100%;
   }
+
+  // 技表
   .moves-data{
     font-size: smaller;
   }
@@ -163,6 +166,11 @@
   }
   td.damage{
     display: none;
+  }
+
+  // ページトップボタン
+  .page-top{
+    padding: 2vmin;
   }
 }
 
