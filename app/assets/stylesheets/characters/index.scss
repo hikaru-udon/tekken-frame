@@ -1,48 +1,79 @@
-.main{
-  height: auto;
-  width: 100%;
-  background-color: #ccc;
-  padding: 10vmin 1vmin;
-  position: relative;
-  min-height: 100%;
-}
-
-.title-contents{  //メインのタイトル部分（画像等を入れる予定）
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-  
-.main-content {  //メインコンテンツの大枠
-  height: auto;
-}
-
-.contents-name{  //各コンテンツのコンテンツ名
+//前提
+*{
   font-family: serif;
+}
+
+// 大枠.containerはviews/moves.index.htmlと共通クラス
+
+// タイトルコンテント
+.title-wrapper{
+  height: 40vmin;
+  margin-bottom: 2vmin;
+  background-color: rgba(105, 72, 11, 0.596);
+}
+
+// 各コンテンツの共通項目
+.contents{
+  width: 100%;
+  height: auto;
+  margin: 0 auto 2vmin auto;
+}
+.contents-title{
+  width: 50%;
+  padding-left:  1vmin;
+  margin-bottom: 2vmin;
   font-size: 5vmin;
   border-bottom: 2px double black;
-  margin: 30px 0;
-  padding: 5px 0 0 20px;
   font-style: oblique;
 }
 
-.character-list{  //各キャラクターのリンク
-  margin: 20px;
-  font-family: serif;
+// キャラクター選択
+.all-characters-btn{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  text-align: center;
 }
-
-.character{  //キャラクターのリンク編集
+.each-character-btn{
+  display: inline-block;
+  width: 32%;
+  height: 12vmin;
+  margin: 0.6vmin;
+  background-color: #33577a;
+  border-radius: 2vmin 0 2vmin 0;
+  box-shadow: 1px 1px 1px #2b384460,
+              2px 2px 1px #2b384460,
+              3px 3px 1px #2b384460,
+              4px 4px 1px #2b384460;
+  color: white;
   text-decoration: none;
-  font-size: 3vmin;
-  color: black;
+  transition: all 0.2s;
+}
+.each-character-btn:hover{
+  box-shadow: none;
+  background-color: #5c89b6;
+  transition: all 0.1s;
+}
+.each-character-name{
+  padding: 4.5vmin; //ボタン内のキャラの名前を中央に配置。本当はmargin:auto;などでレスポンシブかつ正確に配置すべきだができないので妥協。
+  font-size: 3vmin; //ゆくゆくは画像に置き換える？かもなんで、臨時処置。
 }
 
-.basic-operation{  //基本操作知識
-  height: auto;
-}
+// 基礎操作知識
 
-.comments{  //コメント
-  height: auto;
+
+// コメント
+
+
+
+// スマホ画面レスポンシブ
+@media screen and (max-width: 1000px){
+
+  // キャラクター選択
+  .contents-title{
+    margin-left: 1vmin;
+  }
+  .each-character-btn{
+    width: 46%;
+  }
 }

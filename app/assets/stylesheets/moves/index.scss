@@ -141,9 +141,12 @@
 
 //width 1132px以下
 @media screen and (max-width: 1130px){
+  // 大枠
   .container{
     position: relative;
   }
+
+  // ページトップボタン
   .page_top{
     position: absolute;
     bottom: 0;
@@ -163,9 +166,7 @@
   .moves-data{
     font-size: smaller;
   }
-  th.damage{
-    display: none;
-  }
+  th.damage,
   td.damage{
     display: none;
   }
@@ -177,8 +178,9 @@
 }
 
 
-// width800px以下で表が醜くなるのでレスポンシブ対応
+// width500px以下で表が醜くなるのでレスポンシブ対応
 @media screen and (max-width: 500px){
+  // 表
   .moves-data{
     font-size: x-small;
   }
