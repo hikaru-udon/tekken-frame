@@ -16,7 +16,7 @@
 .contents{
   width: 100%;
   height: auto;
-  margin: 0 auto 2vmin auto;
+  margin: 2vmin auto;
 }
 .contents-title{
   width: 50%;
@@ -39,23 +39,25 @@
   width: 32%;
   height: 12vmin;
   margin: 0.6vmin;
-  background-color: #33577a;
+  background-color: rgb(230, 228, 228);
+  border: 1.5vmin solid #33577a;
+  box-sizing: border-box;
   border-radius: 2vmin 0 2vmin 0;
   box-shadow: 1px 1px 1px #2b384460,
               2px 2px 1px #2b384460,
               3px 3px 1px #2b384460,
               4px 4px 1px #2b384460;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: all 0.2s;
 }
 .each-character-btn:hover{
   box-shadow: none;
-  background-color: #5c89b6;
+  background-color: #67a8e9;
   transition: all 0.1s;
 }
 .each-character-name{
-  padding: 4.5vmin; //ボタン内のキャラの名前を中央に配置。本当はmargin:auto;などでレスポンシブかつ正確に配置すべきだができないので妥協。
+  padding: 3vmin; //ボタン内のキャラの名前を中央に配置。本当はmargin:auto;などでレスポンシブかつ正確に配置すべきだができないので妥協。
   font-size: 3vmin; //ゆくゆくは画像に置き換える？かもなんで、臨時処置。
 }
 
