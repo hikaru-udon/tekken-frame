@@ -1,4 +1,18 @@
-// 大枠
+// タイトルコンテント
+.title-wrapper{
+  display: table;
+  width: 100%;
+  height: 50vmin;
+  margin: 2vmin 0;
+  background-color: rgba(105, 72, 11, 0.596);
+}
+.title-wrapper p{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+// コンテンツ大枠
 .top-container{
   width: 1000px;
   height: auto;
@@ -7,19 +21,6 @@
   display: flex;
   flex-direction: column;
   font-family: serif;
-}
-
-// タイトルコンテント
-.title-wrapper{
-  display: table;
-  height: 40vmin;
-  margin-bottom: 2vmin;
-  background-color: rgba(105, 72, 11, 0.596);
-}
-.title-wrapper p{
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
 }
 
 // 各コンテンツの共通項目
