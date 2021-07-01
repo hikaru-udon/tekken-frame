@@ -1,17 +1,29 @@
-//前提
-
-// 大枠.containerはviews/moves.index.htmlと共通クラス
+// 大枠
+.top-container{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto 10vmin auto ;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: serif;
+}
 
 // タイトルコンテント
 .title-wrapper{
+  display: table;
   height: 40vmin;
   margin-bottom: 2vmin;
   background-color: rgba(105, 72, 11, 0.596);
 }
+.title-wrapper p{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 
 // 各コンテンツの共通項目
 .contents{
-  font-family: serif;
   width: 100%;
   height: auto;
   margin: 2vmin auto;
@@ -68,6 +80,9 @@
 
 // スマホ画面レスポンシブ
 @media screen and (max-width: 1000px){
+  .top-container{
+    width: 100%;
+  }
 
   // キャラクター選択
   .contents-title{

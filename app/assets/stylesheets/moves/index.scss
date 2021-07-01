@@ -1,11 +1,12 @@
 // 大枠
-.container{
+.moves-container{
   width: 1000px;
   height: auto;
   margin: 0 auto 10vmin auto ;
   background-color: white;
   display: flex;
   flex-direction: column;
+  font-family: 'Shippori Mincho B1', serif;
 }
 
 // 検索ボタン
@@ -157,7 +158,7 @@
 // スマホ画面へのレスポンシブ
 @media screen and (max-width: 1000px){
   // 大枠
-  .container{
+  .moves-container{
     width: 100%;
   }
 

@@ -2,9 +2,9 @@
   width: 100%;
   height: 10vmin;
   background-color: #103f6d;
-  font-family: serif;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Shippori Mincho B1', serif;
 }

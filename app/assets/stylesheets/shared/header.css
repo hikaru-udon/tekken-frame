@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Shippori Mincho B1', serif;
 }
 .home_btn{
   height: 50%;
@@ -12,7 +13,6 @@
   margin: 0 auto;
   font-style: italic;
   text-align: center;
-  font-family: serif;
   text-decoration: none;
   color: white;
   font-size: 5vmin;
