@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 2vmin;
+  background-color: black;
   overflow: hidden;
   box-shadow:
     inset 20px 20px 1px rgba(0, 0, 0, 0.2),
@@ -23,7 +24,7 @@
   z-index: 1;
 }
 @keyframes title-img {
-  100% { transform: scale(1.0)}
+  100% { transform: scale(1.1)}
   100% { opacity: 1.0;}
 }
 
