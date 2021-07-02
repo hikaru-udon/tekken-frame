@@ -46,12 +46,13 @@
   margin: 2vmin auto;
 }
 .contents-title{
-  width: 50%;
+  width: 70%;
   padding-left:  1vmin;
   margin-bottom: 2vmin;
-  font-size: 5vmin;
-  border-bottom: 2px double black;
-  font-style: oblique;
+  font-size: 6vmin;
+  text-shadow: 1px 1px 1px rgba(27, 77, 134, 0.5);
+  // box-shadow: bottom 2px 1px rgba(27, 77, 134, 0.5);
+  border-bottom: 2px solid black;
 }
 
 // キャラクター選択
@@ -84,8 +85,7 @@
     #2d5180 0%,
     #2d5180 50%,
     #bdbdbd 50%,
-    #bdbdbd 100%
-    );
+    #bdbdbd 100%);
   transition: all 0.2s;
   position: relative;
 }
