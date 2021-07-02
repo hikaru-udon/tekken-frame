@@ -6,8 +6,10 @@
   align-items: center;
   font-family: 'Shippori Mincho B1', serif;
   background: linear-gradient(to bottom, #103f6d 55%, rgb(105, 105, 105));
-  box-shadow: 0 1vmin 10px rgb(71, 71, 71);
+  box-shadow: 0 1vmin 1vmin rgb(71, 71, 71);
   position: absolute; /*ヘッダーに影をつけて浮かび上がらせるため */
+  top: 0;
+  left: 0;
   z-index: 10;
 }
 .home_btn{
