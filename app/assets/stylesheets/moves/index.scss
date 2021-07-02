@@ -123,23 +123,23 @@
 }
 
 // ページトップに戻るボタン jQuery
-.page-top {
-  position: fixed;
-  bottom: 11vmin;
-  right: 1vmin;
-  padding: 3vmin;
-  background: #b1abab;
-  border: 2px solid #103f6d;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 0.8rem;
-  color: #103f6d;
-  text-decoration: none;
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
-}
+// .page-top {
+//   position: fixed;
+//   bottom: 11vmin;
+//   right: 1vmin;
+//   padding: 3vmin;
+//   background: #b1abab;
+//   border: 2px solid #103f6d;
+//   border-radius: 5px;
+//   -webkit-border-radius: 5px;
+//   -moz-border-radius: 5px;
+//   font-size: 0.8rem;
+//   color: #103f6d;
+//   text-decoration: none;
+//   -moz-opacity: 0.8;
+//   -khtml-opacity: 0.8;
+//   opacity: 0.8;
+// }
 
 //width 1132px以下
 @media screen and (max-width: 1130px){
@@ -148,12 +148,12 @@
     position: relative;
   }
 
-  // ページトップボタン
-  .page_top{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+  // // ページトップボタン
+  // .page_top{
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  // }
 }
 
 
@@ -173,10 +173,10 @@
     display: none;
   }
 
-  // ページトップボタン
-  .page-top{
-    padding: 2vmin;
-  }
+  // // ページトップボタン
+  // .page-top{
+  //   padding: 2vmin;
+  // }
 }
 
 

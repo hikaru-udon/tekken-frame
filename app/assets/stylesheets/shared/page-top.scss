@@ -1,0 +1,33 @@
+// ページトップに戻るボタン jQuery
+.page-top {
+  position: fixed;
+  bottom: 11vmin;
+  right: 1vmin;
+  padding: 3vmin;
+  background: #103f6d;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+//width 1132px以下
+@media screen and (max-width: 1130px){
+  .page_top{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+//@at-root スマホ画面へのレスポンシブ
+@media screen and (max-width: 1000px){
+  .page-top{
+    padding: 2vmin;
+  }
+}
