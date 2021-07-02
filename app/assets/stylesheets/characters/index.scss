@@ -2,7 +2,7 @@
 .title-wrapper{
   display: block;
   width: 100%;
-  height: 90vmin;
+  height: auto;
   margin-bottom: 2vmin;
   background-color: rgb(2, 2, 2);
   background-image: url('tekken_title.jpeg');
@@ -75,14 +75,13 @@
   width: 32%;
   height: 12vmin;
   margin: 0.6vmin;
-  // border-bottom: 0.7vmin solid #ccdae7;
-  // border-right: 0.7vmin solid #c4e0fc;
   box-sizing: border-box;
   border-radius: 2vmin 0 2vmin 0;
-  box-shadow: 1px 1px 1px #2b384460,
-              2px 2px 1px #2b384460,
-              3px 3px 1px #2b384460,
-              4px 4px 1px #2b384460;
+  box-shadow: 
+    1px 1px 1px #2b384460,
+    2px 2px 1px #2b384460,
+    3px 3px 1px #2b384460,
+    4px 4px 1px #2b384460;
   color: black;
   text-decoration: none;
   font-weight: bold;
@@ -97,21 +96,19 @@
     #bdbdbd 50%,
     #bdbdbd 100%
     );
-  transition: all 0.2s;
-}
-.each-character-btn:hover{
-  box-shadow: none;
-  text-shadow: none;
-  color: white;
-  background-position: 0 0;
-  // box-shadow: -1px -1px 2px #2b384460,
-  //             -2px -2px 2px #2b384460,
-  //             -3px -3px 2px #2b384460,
-  //             -4px -4px 2px #2b384460;
-}
-.each-character-name{
-  padding: 4.5vmin; //ボタン内のキャラの名前を中央に配置。本当はmargin:auto;などでレスポンシブかつ正確に配置すべきだができないので妥協。
-  font-size: 3vmin; //ゆくゆくは画像に置き換える？かもなんで、臨時処置。
+    transition: all 0.2s;
+  }
+  .each-character-btn:hover{
+    box-shadow:
+      inset 0 5px 0 rgba(43, 43, 43, 0.2),
+      inset 5px 0 0 rgba(43, 43, 43, 0.2);
+    text-shadow: none;
+    color: white;
+    background-position: 0 0;
+  }
+  .each-character-name{
+  padding: 4vmin; //ボタン内のキャラの名前を中央に配置。本当はmargin:auto;などでレスポンシブかつ正確に配置すべきだができないので妥協。
+  font-size: 4vmin; //ゆくゆくは画像に置き換える？かもなんで、臨時処置。
 }
 
 // 基礎操作知識
