@@ -97,8 +97,9 @@
 }
 .each-character-name{
   display: block;
-  width: 100%;
+  width: 90%;
   font-size: 3.5vmin; //ゆくゆくは画像に置き換える？かもなんで、臨時処置。
+  text-align: left;
   position: absolute;
   top: 50%;
   left: 50%;
