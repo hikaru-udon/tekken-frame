@@ -4,9 +4,11 @@
   width: 100%;
   height: auto;
   margin-bottom: 2vmin;
-  background-color: rgb(2, 2, 2);
-  background-image: url('tekken_title.jpeg');
   overflow: hidden;
+  box-shadow:
+    inset 20px 20px 1px rgba(0, 0, 0, 0.2),
+    inset -20px -20 1px rgba(43, 43, 43, 0.2);
+  position: relative; //ヘッダーに影をつけて浮かび上がらせるため
 }
 .title-img{
   display: block;
@@ -14,28 +16,16 @@
   height: auto;
   max-width: 100%;
   max-height:100%;
-  margin: 0 auto;
+  margin: 10vmin auto 0 auto;
   animation: 
-    // title-words 3s ease-in-out forwards,
     title-img 1.5s ease-in-out forwards; //画像や要素を拡大縮小するアニメーション、forwards(100%)＝最大拡大位置で止まる、infinity=拡大縮小を繰り返す
   opacity: 0;
+  z-index: 1;
 }
-// @keyframes title-words {
-//   100% { content: "Let's involve the world, with your Iron Fist.";}
-//   100% { color: white;}
-//   100% { transform: scale(1.2)}
-//   100% { opacity: 1.0;}
-// }
 @keyframes title-img {
-  100% { transform: scale(1.1)}
+  100% { transform: scale(1.0)}
   100% { opacity: 1.0;}
 }
-// .title_img::before{
-//   content: "Let's involve the world, with your Iron Fist.";
-//   width: fit-content;
-//   color: white;
-//   animation: title-img-before 3s ease-in-out forwards; //画像や要素を拡大縮小するアニメーション、forwards(100%)＝最大拡大位置で止まる、infinity=拡大縮小を繰り返す
-// }
 
 // コンテンツ大枠
 .top-container{

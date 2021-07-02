@@ -1,11 +1,14 @@
 .header{
   width: 100%;
   height: 12vmin;
-  background-color: #103f6d;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Shippori Mincho B1', serif;
+  background: linear-gradient(to bottom, #103f6d 55%, rgb(105, 105, 105));
+  box-shadow: 0 1vmin 10px rgb(71, 71, 71);
+  position: absolute; /*ヘッダーに影をつけて浮かび上がらせるため */
+  z-index: 10;
 }
 .home_btn{
   height: 50%;

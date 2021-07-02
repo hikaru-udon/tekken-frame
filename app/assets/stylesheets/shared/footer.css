@@ -7,4 +7,5 @@
   justify-content: space-around;
   align-items: center;
   font-family: 'Shippori Mincho B1', serif;
+  box-shadow: -0.5vmin -0.5vmin 10px rgb(71, 71, 71);
 }
