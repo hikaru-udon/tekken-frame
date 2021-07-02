@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_04_074525) do
+ActiveRecord::Schema.define(version: 2021_06_30_060814) do
 
   create_table "characters", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name", null: false
-    t.string "button"
+    t.string "fullname"
+    t.string "english_name"
+    t.string "english_fullname"
+    t.string "sex"
+    t.string "country"
+    t.string "participation"
+    t.string "fighting_style"
+    t.text "summary"
   end
 
   create_table "moves", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|

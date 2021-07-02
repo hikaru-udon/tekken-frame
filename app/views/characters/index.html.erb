@@ -1,32 +1,183 @@
-<div class = "main">
+<div class="title-wrapper">
   <%= render "shared/header" %>
+  <%= image_tag 'tekken_title.jpeg', alt:'タイトル画像', class:"title-img" %>
+</div>
 
-  <div class="main-content">
-
-    <div>
-      <div class = "select-character">
-        <div class = "contents-name">キャラクター選択</div>
-          <div class = "characters">
-            <ul>
-              <% @characters.each do |character| %>
-                <li class = "character-list"><%= link_to character.name, character_moves_path(character), class:"character" %></li>
-              <% end %>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class = "basic-operation">
-        <div class = "contents-name">基本操作知識</div>
-      </div>
-
-      <div class = "comments">
-        <div class = "contents-name">コメント</div>
-      </div>
+<div class = "top-container">
+  <div class = "contents">
+    <h1 class = "contents-title">キャラクター選択</h1>
+    <div class = "all-characters-btn">
+      <%= link_to character_moves_path(@characters[0]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[0].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[1]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[1].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[2]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[2].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[3]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[3].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[4]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[4].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[5]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[5].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[6]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[6].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[7]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[7].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[8]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[8].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[9]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[9].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[10]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[10].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[11]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[11].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[12]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[12].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[13]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[13].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[14]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[14].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[15]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[15].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[16]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[16].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[17]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[17].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[18]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[18].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[19]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[19].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[20]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[20].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[21]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[21].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[22]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[22].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[23]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[23].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[24]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[24].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[25]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[25].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[26]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[26].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[27]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[27].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[28]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[28].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[29]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[29].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[30]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[30].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[31]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[31].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[32]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[32].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[33]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[33].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[34]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[34].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[35]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[35].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[36]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[36].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[37]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[37].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[38]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[38].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[39]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[39].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[40]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[40].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[41]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[41].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[42]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[42].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[43]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[43].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[44]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[44].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[45]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[45].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[46]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[46].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[47]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[47].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[48]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[48].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[49]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[49].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[50]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[50].name %></div> 
+      <% end %>
+      <%= link_to character_moves_path(@characters[51]), class:"each-character-btn" do %>
+        <div class="each-character-name"><%= @characters[51].name %></div> 
+      <% end %>
     </div>
-    
   </div>
 
-  <%= render "shared/footer" %>
+  <div class = "contents">
+    <h1 class = "contents-title">基本操作知識</h1>
+    <div class="basic-data"></div>
+  </div>
+
+  <div class = "contents">
+    <h1 class = "contents-title">コメント</h1>
+    <div class="all-comments"></div>
+  </div>
 
 </div>
+
+<%= render "shared/page-top" %>  
+
+<%= render "shared/footer" %>

@@ -1,49 +1,51 @@
 // 大枠
-.container{
+.moves-container{
   width: 1000px;
   height: auto;
-  margin: 8vmin auto 10vmin auto ;
-  font-family: serif;
+  margin: 0 auto 10vmin auto ;
   background-color: white;
   display: flex;
   flex-direction: column;
+  font-family: 'Shippori Mincho B1', serif;
 }
 
 // 検索ボタン
 .search-form{
-  margin-bottom: 4vmin;
-  transform: scale(1.5, 1.5);
+  margin: 5vmin;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .form{
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .search-input{
-  padding: 1px 8px;
+  height: 4vmin;
+  padding: 0 1vmin;
   font-family: serif;
+  font-size: 2vmin;
   width: 50vmin;
   border-right: none;
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 4vmin 0 0 4vmin;
 }
 .search-input:focus{
   outline: none;
 }
 .search-btn{
-  padding: 4px;
+  height: 4vmin;
   width: 6vmin;
-  box-sizing: border-box;
-  border-radius: 0 2rem 2rem 0;
-  background-color: #003366;
+  border-radius: 0 4vmin 4vmin 0;
+  background-color: #103f6d;
   color: white;
   cursor: pointer;
 }
 
 //「技一覧表示に戻る」ボタン
 .back-btn{
-  height: 10vmin;
-  margin-bottom: 2vmin;
+  margin-bottom: 5vmin;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .back:hover{
@@ -66,6 +68,8 @@
   justify-content: center;
   align-items: center;
 }
+// .character-name::before{
+// }
 
 //技表
 .moves-data{
@@ -82,7 +86,7 @@
   border: 1px solid gray;
   vertical-align: middle; //セル内の文字位置を調節 *インライン要素とセルにのみ適用可能
   color: white;
-  background-color: #003366;
+  background-color: #103f6d;
 }
 .moves-data td{
   height: 5vmin;
@@ -119,41 +123,44 @@
 }
 
 // ページトップに戻るボタン jQuery
-.page-top {
-  position: fixed;
-  bottom: 11vmin;
-  right: 1vmin;
-  padding: 3vmin;
-  background: #b1abab;
-  border: 2px solid #004285;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 0.8rem;
-  color: #003366;
-  text-decoration: none;
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
-}
+// .page-top {
+//   position: fixed;
+//   bottom: 11vmin;
+//   right: 1vmin;
+//   padding: 3vmin;
+//   background: #b1abab;
+//   border: 2px solid #103f6d;
+//   border-radius: 5px;
+//   -webkit-border-radius: 5px;
+//   -moz-border-radius: 5px;
+//   font-size: 0.8rem;
+//   color: #103f6d;
+//   text-decoration: none;
+//   -moz-opacity: 0.8;
+//   -khtml-opacity: 0.8;
+//   opacity: 0.8;
+// }
 
 //width 1132px以下
 @media screen and (max-width: 1130px){
+  // 大枠
   .container{
     position: relative;
   }
-  .page_top{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+
+  // // ページトップボタン
+  // .page_top{
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  // }
 }
 
 
 // スマホ画面へのレスポンシブ
 @media screen and (max-width: 1000px){
   // 大枠
-  .container{
+  .moves-container{
     width: 100%;
   }
 
@@ -161,22 +168,21 @@
   .moves-data{
     font-size: smaller;
   }
-  th.damage{
-    display: none;
-  }
+  th.damage,
   td.damage{
     display: none;
   }
 
-  // ページトップボタン
-  .page-top{
-    padding: 2vmin;
-  }
+  // // ページトップボタン
+  // .page-top{
+  //   padding: 2vmin;
+  // }
 }
 
 
-// width800px以下で表が醜くなるのでレスポンシブ対応
+// width500px以下で表が醜くなるのでレスポンシブ対応
 @media screen and (max-width: 500px){
+  // 表
   .moves-data{
     font-size: x-small;
   }

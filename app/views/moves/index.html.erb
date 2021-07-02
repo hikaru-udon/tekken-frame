@@ -1,6 +1,5 @@
-
 <%= render "shared/header" %>
-<div class="container">
+<div class="moves-container">
 
   <div class="search-form">
     <%= form_with(url: search_character_moves_path, local: true, method: :get, class:"form") do |form| %>
@@ -38,7 +37,7 @@
     <% end %>
   </table>
 
-  <a href="#" class="page-top">PAGE TOP▲</a>
+  <%= render "shared/page-top" %>  
 
 </div>
 <%= render "shared/footer" %>

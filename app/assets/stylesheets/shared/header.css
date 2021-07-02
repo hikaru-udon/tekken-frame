@@ -1,17 +1,41 @@
 .header{
   width: 100%;
-  height: 10vmin;
-  background-color: #003366;
-  color: white;
+  height: 12vmin;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  font-family: 'Shippori Mincho B1', serif;
+  background: linear-gradient(to bottom, #103f6d 55%, rgb(105, 105, 105));
+  box-shadow: 0 1vmin 10px rgb(71, 71, 71);
+  position: absolute; /*ヘッダーに影をつけて浮かび上がらせるため */
+  z-index: 10;
 }
 .home_btn{
-  height: 50%;
-  font-family: serif;
-  text-decoration: none;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  font-style: italic;
   text-align: center;
+  text-decoration: none;
   color: white;
   font-size: 5vmin;
+  text-shadow: 1px 2px 1px #01162c,
+        1px 3px 1px #01162c,
+        1px 4px 1px #01162c,
+        1px 5px 1px #01162c,
+        1px 6px 1px #01162c;
+  transition: all 0.5s;
+}
+.home_btn:hover{
+  transition: all 0.1s;
+  text-shadow: 1px 1px 5px #01162c, 
+        1px 2px 6px #01162c,
+        1px 3px 7px #01162c,
+        1px 4px 8px #01162c,
+        1px 5px 9px #01162c,
+        1px 6px 10px #01162c,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
 }
