@@ -21,7 +21,7 @@
   </div>
 
   <table class="moves-data">
-    <tr>
+    <tr class="moves-info-category">
       <th class="moves_name">技名</th>
       <th class="command">コマンド</th>
       <th class="damage">ダメージ</th>
@@ -29,7 +29,7 @@
       <th class="block">ガードF</th>
     </tr>
     <% @moves.each do |moves| %>
-      <tr class="moves-info">
+      <tr class="moves-info-contents">
         <td class="moves_name"><%=link_to moves.moves_name, "#", class: "name-link" %></td>
         <td class="command"><%= moves.command %></td>
         <td class="damage"><%= moves.damage %></td>
