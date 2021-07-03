@@ -10,12 +10,6 @@
 }
 
 // 検索ボタン
-// .search-form{
-//   height: auto;
-//   display: flex;
-//   justify-content: center;
-//   text-align: center;
-// }
 .search-form{
   width: 100%;
   height: auto;
@@ -115,18 +109,22 @@
   word-break: break-all; //英字を含む文字列の改行を可能にしてフレキシブルにする
   word-wrap: break-all; //英字を含む文字列の改行を可能にしてフレキシブルにする
 }
+.moves-info-category{
+  width: 100%;
+  // background-image: linear-gradient(to left top, #246fbb 5%, #103f6d);
+}
 .moves-data th,
 .moves-data td{
-  border: 1px solid gray;
   vertical-align: middle; //セル内の文字位置を調節 *インライン要素とセルにのみ適用可能
 }
 .moves-data th{
   height: 8vmin;
   color: white;
+  border: 1px solid white;
   background-color: #103f6d;
-  position: sticky;
+  position: sticky; //表のカテゴリーを固定
   top: 0;
-  &::after{
+  &::before{
     content: "";
     position: absolute;
     top: -1px;
@@ -139,6 +137,7 @@
 .moves-data td{
   height: 5vmin;
   padding-left: 1vmin;
+  border-bottom: 1px solid gray;
 }
 .name-link{
   color: black;
@@ -148,7 +147,7 @@
   width: 100%;
 }
 .moves-info-contents:hover{  //技一覧のtr
-  background-color: lightgray;
+  background-image: linear-gradient(to left, white 1%, #ffdd81);
   // transform: scale(1.03, 1.1);
   // transition: transform 0.1s;
 }
@@ -158,14 +157,14 @@
 }
 .moves-data td:nth-of-type(4){
   table-layout: fixed;
-  width: 8vmin;
+  // width: 8vmin;
   min-width: 7vmin;
   padding: 0;
   text-align: center;
 }
 .moves-data td:nth-of-type(5){
   table-layout: fixed;
-  width: 8vmin;
+  // width: 8vmin;
   min-width: 7vmin;
   padding: 0;
   text-align: center;
@@ -208,7 +207,7 @@
     font-size: x-small;
   }
   .moves-data td{
-    padding: 0.5vmin;
+    padding: 0.8vmin;
   }
 
 }
