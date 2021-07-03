@@ -2,7 +2,7 @@
 .moves-container{
   width: 1000px;
   height: auto;
-  margin: 0 auto 10vmin auto ;
+  margin: 12vmin auto;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -11,41 +11,60 @@
 
 // 検索ボタン
 .search-form{
-  margin: 5vmin;
+  width: 100%;
+  height: auto;
+  margin: 7vmin 0;
   display: flex;
   justify-content: center;
-  text-align: center;
-}
-.form{
-  display: flex;
   align-items: center;
 }
 .search-input{
-  height: 4vmin;
-  padding: 0 1vmin;
-  font-family: serif;
+  width: 60%;
+  height: 5vmin;
+  padding: 0 0 0 2vmin; //placeholderの位置調整
+  font-family: 'Shippori Mincho B1', serif;
   font-size: 2vmin;
-  width: 50vmin;
-  border-right: none;
   border-radius: 4vmin 0 0 4vmin;
+  border: 1px solid black;
+  border-width: 1px 0 1px 1px;
 }
-.search-input:focus{
+.search-input:focus{ //検索フォーム入力時のGoogle側の既存のアウトライン（青）を消す
   outline: none;
 }
 .search-btn{
-  height: 4vmin;
-  width: 6vmin;
+  width: 10%;
+  height: 5vmin;
+  padding: 0;
   border-radius: 0 4vmin 4vmin 0;
   background-color: #103f6d;
   color: white;
+  font-size: 0;
+  text-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
   cursor: pointer;
+  border: 1px solid black;
+  box-sizing: content-box;
+  box-shadow:
+    inset 0 2px 0 rgba(252, 252, 252, 0.3),
+    inset -2px 0 0 rgba(0, 0, 0, 0.3);
+  // border-style: none; //初期設定のボーダーをなくせる
+}
+.search-btn::before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f002';
+  font-weight: 900;
+  font-size: 3vmin;
+}
+.search-btn:active{ 
+  box-shadow:  //クリック時に凹む
+    inset 0 -2px 0 rgba(252, 252, 252, 0.3),
+    inset 2px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 //「技一覧表示に戻る」ボタン
 .back-btn{
-  margin-bottom: 5vmin;
+  margin: 0 2vmin 8vmin 2vmin;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .back:hover{
@@ -54,54 +73,85 @@
 }
 .back{
   font-size: 3vmin;
+  text-shadow: 1px 1px 1px rgba(27, 77, 134, 0.5);
   text-decoration: none;
   color: black;
 }
 
 //キャラクターネーム
 .character-name{
-  height: 12vmin;
-  margin-bottom: 1vmin;
+  height: auto;
+  margin-bottom: 3vmin;
   font-size: 10vmin;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(27, 77, 134, 0.5);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  // ruby-position: under; ルビの配置を決める
 }
-// .character-name::before{
-// }
+.character-name rt{
+  margin-bottom: .3em;
+	transform: translateY(-.3em);
+  font-size: 3vmin;
+  text-align: center;
+}
+
 
 //技表
 .moves-data{
   width: 97%;
   margin: 0 auto;
   table-layout: auto; //セルの幅を調整するプロパティ、widthの指定が必要、auto=内容に合わせ自動調整、fixed＝等間隔やカスタマイズできる
-  font-size: 1rem;
+  font-size: 2vmin;
+  font-weight: bold;
   border-collapse: collapse; //要素同士が重なる場合のborderを調整。重ねる＝collapse/離す＝separate
   word-break: break-all; //英字を含む文字列の改行を可能にしてフレキシブルにする
   word-wrap: break-all; //英字を含む文字列の改行を可能にしてフレキシブルにする
 }
-.moves-data th{
-  height: 7vmin;
-  border: 1px solid gray;
+.moves-info-category{
+  width: 100%;
+  // background-image: linear-gradient(to left top, #246fbb 5%, #103f6d);
+}
+.moves-data th,
+.moves-data td{
   vertical-align: middle; //セル内の文字位置を調節 *インライン要素とセルにのみ適用可能
+}
+.moves-data th{
+  height: 8vmin;
   color: white;
+  border: 1px solid white;
   background-color: #103f6d;
+  transform: scale(1.02);
+  position: sticky; //表のカテゴリーを固定
+  top: 0;
+  &::before{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+  }
 }
 .moves-data td{
   height: 5vmin;
-  border: 1px solid gray;
-  vertical-align: middle; //セル内の文字位置を調節 *インライン要素とセルにのみ適用可能
   padding-left: 1vmin;
+  border-bottom: 1px solid gray;
 }
 .name-link{
   color: black;
   text-decoration: none;
 }
-.moves-info:hover{  //技一覧のtr
-  background-color: rgb(252, 168, 186);
-  transform: scale(1.03, 1.1);
-  transition: all 0.1s;
+.moves-info-contents{
+  width: 100%;
+}
+.moves-info-contents:hover{  //技一覧のtr
+  background-image: linear-gradient(to left, white 1%, #ffdd81);
+  // transform: scale(1.03, 1.1);
+  // transition: transform 0.1s;
 }
 .moves-data td:nth-of-type(1){  //列ごとにスタイルを指定、（○）で左から○番目の列を指定。
   table-layout: fixed;
@@ -109,37 +159,19 @@
 }
 .moves-data td:nth-of-type(4){
   table-layout: fixed;
-  width: 8vmin;
+  // width: 8vmin;
   min-width: 7vmin;
   padding: 0;
   text-align: center;
 }
 .moves-data td:nth-of-type(5){
   table-layout: fixed;
-  width: 8vmin;
+  // width: 8vmin;
   min-width: 7vmin;
   padding: 0;
   text-align: center;
 }
 
-// ページトップに戻るボタン jQuery
-// .page-top {
-//   position: fixed;
-//   bottom: 11vmin;
-//   right: 1vmin;
-//   padding: 3vmin;
-//   background: #b1abab;
-//   border: 2px solid #103f6d;
-//   border-radius: 5px;
-//   -webkit-border-radius: 5px;
-//   -moz-border-radius: 5px;
-//   font-size: 0.8rem;
-//   color: #103f6d;
-//   text-decoration: none;
-//   -moz-opacity: 0.8;
-//   -khtml-opacity: 0.8;
-//   opacity: 0.8;
-// }
 
 //width 1132px以下
 @media screen and (max-width: 1130px){
@@ -148,12 +180,6 @@
     position: relative;
   }
 
-  // // ページトップボタン
-  // .page_top{
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
-  // }
 }
 
 
@@ -173,20 +199,17 @@
     display: none;
   }
 
-  // // ページトップボタン
-  // .page-top{
-  //   padding: 2vmin;
-  // }
 }
 
 
 // width500px以下で表が醜くなるのでレスポンシブ対応
 @media screen and (max-width: 500px){
-  // 表
+  // 技表
   .moves-data{
     font-size: x-small;
   }
   .moves-data td{
-    padding: 0.5vmin;
+    padding: 0.8vmin;
   }
+
 }

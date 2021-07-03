@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 2vmin;
+  background-color: black;
   overflow: hidden;
   box-shadow:
     inset 20px 20px 1px rgba(0, 0, 0, 0.2),
@@ -23,7 +24,7 @@
   z-index: 1;
 }
 @keyframes title-img {
-  100% { transform: scale(1.0)}
+  100% { transform: scale(1.1)}
   100% { opacity: 1.0;}
 }
 
@@ -45,12 +46,12 @@
   margin: 2vmin auto;
 }
 .contents-title{
-  width: 50%;
+  width: 70%;
   padding-left:  1vmin;
   margin-bottom: 2vmin;
-  font-size: 5vmin;
-  border-bottom: 2px double black;
-  font-style: oblique;
+  font-size: 6vmin;
+  text-shadow: 1px 1px 1px rgba(27, 77, 134, 0.5);
+  border-bottom: 2px solid black;
 }
 
 // キャラクター選択
@@ -83,8 +84,7 @@
     #2d5180 0%,
     #2d5180 50%,
     #bdbdbd 50%,
-    #bdbdbd 100%
-    );
+    #bdbdbd 100%);
   transition: all 0.2s;
   position: relative;
 }
