@@ -1,21 +1,23 @@
 <%= render "shared/header" %>
 <div class="moves-container">
 
-  <div class="search-form">
-    <%= form_with(url: search_character_moves_path, local: true, method: :get, class:"form") do |form| %>
-      <%= form.text_field :keyword, placeholder: "キーワードで検索する", class: "search-input" %>
-      <button type=submit class="search-btn">
-        <i class="fas fa-search"><% form.submit "検索"%></i>
-      </button>
-    <% end %>
-  </div>
+  <%= form_with(url: search_character_moves_path, local: true, method: :get, class:"search-form") do |f| %>
+    <%= f.text_field :keyword, placeholder: "キーワードで検索する", class: "search-input" %>
+      <%# <%= f.submit "&#xf002; 検索", class: "search-btn"  %>
+      <%# 初期値のform.submit内ではFontAwesomeは表示できないので、使用する場合はform.bottonに置き換え、下記の用意記述する %>
+    <%= f.button type:"submit", class:"search-btn" %>
+  <% end %>
 
   <div class="back-btn">
+    <%=link_to "技Top画面", character_moves_path, class:"back" %>
     <%=link_to "技Top画面", character_moves_path, class:"back" %>
   </div>
 
   <div class="character-name">
-    <%= @character.name %>
+    <ruby>
+      <%= @character.fullname %>
+      <rt><%= @character.english_fullname %></rt>
+    </ruby>
   </div>
 
   <table class="moves-data">
