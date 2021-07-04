@@ -197,7 +197,13 @@
   td.hitbox{
     display: none;
   }
-
+  .moves-data th{
+    border-width: 1px 0 1px 0;
+    transform: scale(1.01);
+  }
+  .moves-data td{
+    border: 1px solid gray ;
+  }
 }
 
 
@@ -209,6 +215,7 @@
   }
   .moves-data td{
     padding: 0.8vmin;
+    border: 1px solid gray ;
   }
 
 }
