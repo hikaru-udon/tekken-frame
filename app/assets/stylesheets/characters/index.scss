@@ -1,3 +1,7 @@
+body{
+  background-color: #faf8f1;
+}
+
 // タイトルコンテント
 .title-wrapper{
   display: block;
@@ -33,7 +37,6 @@
   width: 1000px;
   height: auto;
   margin: 0 auto 10vmin auto ;
-  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: serif;

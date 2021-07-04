@@ -1,9 +1,13 @@
+// //前提
+// *{
+//   background-color: #faf8f1;
+// }
+
 // 大枠
 .moves-container{
   width: 1000px;
   height: auto;
   margin: 12vmin auto;
-  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: 'Shippori Mincho B1', serif;
@@ -37,7 +41,7 @@
   padding: 0;
   border-radius: 0 4vmin 4vmin 0;
   background-color: #103f6d;
-  color: white;
+  color: #faf8f1;
   font-size: 0;
   text-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
   cursor: pointer;
@@ -120,8 +124,8 @@
 }
 .moves-data th{
   height: 8vmin;
-  color: white;
-  border: 1px solid white;
+  color: #faf8f1;
+  border: 1px solid #faf8f1;
   background-color: #103f6d;
   transform: scale(1.02);
   position: sticky; //表のカテゴリーを固定
@@ -149,7 +153,7 @@
   width: 100%;
 }
 .moves-info-contents:hover{  //技一覧のtr
-  background-image: linear-gradient(to left, white 1%, #ffdd81);
+  background-image: linear-gradient(to left, #faf8f1 1%, #ffdd81);
   // transform: scale(1.03, 1.1);
   // transition: transform 0.1s;
 }
