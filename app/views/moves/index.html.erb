@@ -30,7 +30,7 @@
     </tr>
     <% @moves.each do |move| %>
       <tr class="moves-info-contents">
-        <td class="moves_name"><%=link_to move.moves_name, character_moves_path, class: "name-link" %></td>
+        <td class="moves_name"><%=link_to move.moves_name, character_move_path(id:move), class: "name-link" %></td>
         <td class="command"><%= move.command %></td>
         <td class="hitbox"><%= move.hitbox %></td>
         <td class="startup"><%= move.startup %></td>
