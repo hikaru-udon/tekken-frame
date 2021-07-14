@@ -1,12 +1,10 @@
 <div class="moves-container">
-  <div class="back-btn">
+  <div class="back-btn-show">
     <%=link_to "Topページ", "/", class:"back" %>
     <%=link_to "全技一覧", character_moves_path, class:"back" %>
   </div>
 
-  <div class="move_name">
-    <%= @move.moves_name%>
-  </div>
+  <div class="move-name"><%= @move.moves_name %></div>
 
   <table class="move-data-show">
     <tr>
@@ -34,5 +32,7 @@
       <th>カウンターヒット時<td><%= @move.counter_hit %></td></th>
     </tr>
   </table>
+
   <div class="movie">イメージムービー⬇︎</div>
+
 </div>

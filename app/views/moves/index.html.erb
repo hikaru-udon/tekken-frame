@@ -1,4 +1,3 @@
-<%= render "shared/header" %>
 <div class="moves-container">
 
   <%= form_with(url: search_character_moves_path, local: true, method: :get, class:"search-form") do |f| %>
@@ -39,8 +38,6 @@
     <% end %>
   </table>
 
-  <%= render "shared/page-top" %> 
   <%# <%= javascript_pack_tag 'move/application.js' %>
 
 </div>
-<%= render "shared/footer" %>

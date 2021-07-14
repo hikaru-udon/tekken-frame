@@ -1,14 +1,24 @@
+// 戻るボタン
+.back-btn-show{
+  margin-top: 10vmin;
+  margin-bottom: 5vmin;
+  display: flex;
+  justify-content: space-around;
+}
+.back:hover{
+  color: #2c91f7;
+  transition: all 0.2s;
+}
+
 // 技名
-.move_name{
+.move-name{
   height: auto;
-  margin-bottom: 2vmin;
-  font-size: 8vmin;
+  text-align: center;
+  padding: 0 2vmin;
+  margin: 2vmin auto;
+  font-size: 6vmin;
   color: black;
   text-shadow: 1px 1px 1px rgba(27, 77, 134, 0.5);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 // 技詳細表
@@ -35,7 +45,7 @@
     width: 40%;
     height: 8vmin;
     color: #faf8f1;
-background-color: #103f6d;
+    background-color: #103f6d;
   }
   td{
     height: 5vmin;
