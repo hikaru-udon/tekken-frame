@@ -97,7 +97,6 @@
   text-align: center;
 }
 
-
 //技表
 .moves-data{
   width: 97%;
@@ -107,11 +106,10 @@
   font-weight: bold;
   border-collapse: collapse; //要素同士が重なる場合のborderを調整。重ねる＝collapse/離す＝separate
   word-break: break-all; //英字を含む文字列の改行を可能にしてフレキシブルにする
-  word-wrap: break-all; //英字を含む文字列の改行を可能にしてフレキシブルにする
+  // word-wrap: break-all; //英字を含む文字列の改行を可能にしてフレキシブルにする
 }
-.moves-info-category{
+.moves-category{
   width: 100%;
-  // background-image: linear-gradient(to left top, #246fbb 5%, #103f6d);
 }
 .moves-data th,
 .moves-data td{
@@ -136,50 +134,45 @@
   }
 }
 .moves-data td{
-  height: 5vmin;
-  padding-left: 1vmin;
+  height: 6vmin;
   border-bottom: 1px solid gray;
 }
-.name-link{
+.move-links1{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  padding: 0 0.5vmin;
   color: black;
   text-decoration: none;
 }
-.moves-info-contents{
+.move-links2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: auto;
+  padding: 0 0.5vmin;
+  color: black;
+  text-decoration: none;
+}
+.moves-contents{
   width: 100%;
 }
-.moves-info-contents:hover{  //技一覧のtr
+.moves-contents:hover{  //技一覧のtr
   background-image: linear-gradient(to left, #faf8f1 1%, #ffdd81);
-  // transform: scale(1.03, 1.1);
-  // transition: transform 0.1s;
 }
 .moves-data td:nth-of-type(1){  //列ごとにスタイルを指定、（○）で左から○番目の列を指定。
   table-layout: fixed;
-  min-width: 40%;
+  min-width: 30%;
 }
-.moves-data td:nth-of-type(4){
-  table-layout: fixed;
-  // width: 8vmin;
-  min-width: 7vmin;
-  padding: 0;
-  text-align: center;
-}
+.moves-data td:nth-of-type(4),
 .moves-data td:nth-of-type(5){
   table-layout: fixed;
-  // width: 8vmin;
   min-width: 7vmin;
-  padding: 0;
   text-align: center;
 }
 
-
-//width 1132px以下
-@media screen and (max-width: 1130px){
-  // 大枠
-  .container{
-    position: relative;
-  }
-
-}
 
 
 // スマホ画面へのレスポンシブ
@@ -201,8 +194,11 @@
     border-width: 1px 0 1px 0;
     transform: scale(1.01);
   }
-  .moves-data td{
-    border: 1px solid gray ;
+  .moves-data td:nth-of-type(3),
+  .moves-data td:nth-of-type(4){
+    table-layout: auto;
+    min-width: 7vmin;
+    text-align: center;
   }
 }
 
@@ -212,10 +208,6 @@
   // 技表
   .moves-data{
     font-size: x-small;
-  }
-  .moves-data td{
-    padding: 0.8vmin;
-    border: 1px solid gray ;
   }
 
 }
