@@ -28,16 +28,16 @@
       <th>ガードF</th>
     </tr>
     <% @moves.each do |move| %>
-      <tr class="moves-contents">
-        <td><%= link_to move.moves_name, character_move_path(id: move), class: "move-links1" %></td>
-        <td><%= link_to move.command, character_move_path(id: move), class: "move-links1" %></td>
-        <td class="hitbox"><%= link_to move.hitbox, character_move_path(id: move), class: "move-links1" %></td>
-        <td><%= link_to move.startup, character_move_path(id: move), class: "move-links2" %></td>
-        <td><%= link_to move.block, character_move_path(id: move), class: "move-links2" %></td>
+      <tr class="moves-contents" data-href="<%= character_move_path(id: move.id) %>" >
+        <td><%= move.moves_name%></td>
+        <td><%= move.command%></td>
+        <td class="hitbox"><%= move.hitbox%></td>
+        <td><%= move.startup%></td>
+        <td><%= move.block%></td>
       </tr>
     <% end %>
   </table>
 
-  <%# <%= javascript_pack_tag 'move/application.js' %>
+  <%= javascript_pack_tag 'move/application.js' %>
 
 </div>
