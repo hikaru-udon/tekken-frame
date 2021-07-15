@@ -1,0 +1,38 @@
+<div class="moves-container">
+  <div class="back-btn-show">
+    <%=link_to "Topページ", "/", class:"back" %>
+    <%=link_to "全技一覧", character_moves_path, class:"back" %>
+  </div>
+
+  <div class="move-name"><%= @move.moves_name %></div>
+
+  <table class="move-data-show">
+    <tr>
+      <th>コマンド<td><%= @move.command %></td></th>
+    </tr>
+    <tr>
+      <th>判定<td><%= @move.hitbox %></td></th>
+    </tr>
+    <tr>
+      <th>発生F<td><%= @move.startup %></td></th>
+    </tr>
+    <tr>
+      <th>ガードF<td><%= @move.block %></td></th>
+    </tr>
+    <tr>
+      <th>ダメージ<td><%= @move.damage %></td></th>
+    </tr>
+    <tr>
+      <th>技効果<td><%= @move.effect %></td></th>
+    </tr>
+    <tr>
+      <th>ヒット時<td><%= @move.hit %></td></th>
+    </tr>
+    <tr>
+      <th>カウンターヒット時<td><%= @move.counter_hit %></td></th>
+    </tr>
+  </table>
+
+  <div class="movie">イメージムービー⬇︎</div>
+
+</div>

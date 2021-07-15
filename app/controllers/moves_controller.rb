@@ -1,8 +1,12 @@
 class MovesController < ApplicationController
-before_action :set_move, only: [:index, :search]
+before_action :set_move, only: [:index, :show, :search]
 
   def index
-    @moves = @character.moves
+    @moves = @character.moves.all
+  end
+  
+  def show
+    @move = Move.find(params[:id])
   end
 
   def search
@@ -25,7 +29,4 @@ before_action :set_move, only: [:index, :search]
   #   params.require(:move).permit(:moves_name)
   # end
 
-
-  
-  
 end

@@ -32,6 +32,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <%= render "shared/header" %>
     <%= yield %>
+    <%= render "shared/page-top" %>  
+    <%= render "shared/footer" %>
   </body>
 </html>
