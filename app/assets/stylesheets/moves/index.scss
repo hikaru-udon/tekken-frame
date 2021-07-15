@@ -137,25 +137,25 @@
   height: 6vmin;
   border-bottom: 1px solid gray;
 }
-.move-links1{
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: auto;
-  padding: 0 0.5vmin;
-  color: black;
-  text-decoration: none;
-}
-.move-links2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: auto;
-  padding: 0 0.5vmin;
-  color: black;
-  text-decoration: none;
-}
+// .move-links1{  全tdをlink_toで行をリンク化する実装バージョンのCSS
+//   display: flex;
+//   align-items: center;
+//   height: 100%;
+//   width: auto;
+//   padding: 0 0.5vmin;
+//   color: black;
+//   text-decoration: none;
+// }
+// .move-links2{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100%;
+//   width: auto;
+//   padding: 0 0.5vmin;
+//   color: black;
+//   text-decoration: none;
+// }
 .moves-contents{
   width: 100%;
 }
@@ -166,10 +166,14 @@
   table-layout: fixed;
   min-width: 30%;
 }
+.moves-data td:nth-of-type(3){
+  table-layout: fixed;
+  min-width: 25vmin;
+}
 .moves-data td:nth-of-type(4),
 .moves-data td:nth-of-type(5){
   table-layout: fixed;
-  min-width: 7vmin;
+  min-width: 8vmin;
   text-align: center;
 }
 
@@ -197,10 +201,10 @@
   .moves-data td{
     padding: 0.1vmin;
   }
-  .moves-data td:nth-of-type(3),
-  .moves-data td:nth-of-type(4){
+  .moves-data td:nth-of-type(4),
+  .moves-data td:nth-of-type(5){
     table-layout: auto;
-    min-width: 7vmin;
+    min-width:  10vmin;
     text-align: center;
   }
 }
