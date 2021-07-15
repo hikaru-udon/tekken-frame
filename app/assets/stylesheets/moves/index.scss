@@ -166,6 +166,10 @@
   table-layout: fixed;
   min-width: 30%;
 }
+.moves-data td:nth-of-type(3){
+  table-layout: fixed;
+  min-width: 25vmin;
+}
 .moves-data td:nth-of-type(4),
 .moves-data td:nth-of-type(5){
   table-layout: fixed;
